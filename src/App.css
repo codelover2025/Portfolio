@@ -1,0 +1,37 @@
+/* Import Tailwind base styles, components, and utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Optional: fade-in animation */
+@keyframes fade-in {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #121212;
+  color: #E0E0E0;
+}
+
+/* Fade-in animation for smooth section loading */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Utility class to apply fade-in animation */
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out forwards;
+}
